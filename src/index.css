@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Cinzel:wght@400..900&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  --color-wedding-gold: #D4AF37;
+  --color-wedding-gold-light: #F7EF8A;
+  --color-wedding-maroon: #4A0404;
+  --color-wedding-maroon-light: #6B0F0F;
+  --color-wedding-cream: #FFFDFC;
+  --color-wedding-card: #FFFFFF;
+
+  --color-love-ruby: #A82933;
+  --color-love-blush: #FFF0F2;
+
+  --font-traditional: "Playfair Display", serif;
+  --font-sanskrit: "Cinzel", serif;
+  --font-cursive: "Great Vibes", cursive;
+}
+
+html {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+body {
+  background-color: var(--color-wedding-cream);
+  color: var(--color-wedding-maroon);
+  font-family: var(--font-traditional);
+  overflow-x: hidden;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Stationery Card styling */
+.glass-card {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  border-radius: 0.5rem;
+  box-shadow:
+    0 4px 6px -1px rgba(0, 0, 0, 0.05),
+    0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.gold-border {
+  position: relative;
+  border: 1px solid transparent;
+  background: linear-gradient(white, white) padding-box,
+    linear-gradient(45deg, #af8c1e, #d4af37, #f7ef8a, #d4af37, #af8c1e) border-box;
+}
+
+.gold-text-gradient {
+  background: linear-gradient(to right, #af8c1e, #d4af37, #f7ef8a, #d4af37, #af8c1e);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  display: inline-block;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--color-wedding-cream);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #d4af37, #f7ef8a, #d4af37);
+  border-radius: 9999px;
+  border: 2px solid var(--color-wedding-cream);
+}
+
+.mandala-pattern {
+  background-image: url("data:image/svg+xml,%3Csvg width='120' height='120' viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M60 0l5 20L80 10l-10 20 20-5-15 15L90 40l-20 5 15 15-20-5 5 20L60 60l-5 20-20-5 15 15-20 5 15 15L30 80l-20 10 15-20L0 60l20-5-15-15 20 5L10 30l20 10L25 10l5 20L60 0z' fill='%23D4AF37' fill-opacity='0.15' fill-rule='evenodd'/%3E%3C/svg%3E");
+}
+
+.paper-texture {
+  background-image: url("https://www.transparenttextures.com/patterns/natural-paper.png");
+}
